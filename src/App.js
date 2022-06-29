@@ -43,7 +43,7 @@ function App() {
     <Header/>
 
     <section className="section">
-      <form autoComplete='off' onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input 
           type="text" 
           name="search" 
@@ -65,7 +65,7 @@ function App() {
     <p className="category">Category: <span>{query}</span></p>
 
     <article className="cards">
-      <div>
+      {/* <div>
         <h2>Heading 2</h2>
         <ul>
           <li>Something</li>
@@ -73,7 +73,7 @@ function App() {
         </ul>
         <p>Date</p>
         
-      </div>
+      </div> */}
 
       {items.map(({ author, created_at, title, url, objectId }) =>
       <div key={objectId}>
@@ -86,8 +86,8 @@ function App() {
       </div>      
       )}
     </article>
-    </>}
-        
+    </>
+    }        
     </section>
     <Footer />
     </div>
