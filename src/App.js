@@ -3,7 +3,6 @@ import moment from 'moment';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-
 function App() {
   const [items, setItems] = useState([])
   const [query, setQuery] = useState('')
@@ -36,7 +35,7 @@ function App() {
       setText('')
     }
   }
-
+  
   return (
     <div className="content">
 
