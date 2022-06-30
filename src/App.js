@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {format} from 'date-fns';
+import moment from 'moment';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -65,24 +65,18 @@ function App() {
     <p className="category">Category: <span>{query}</span></p>
 
     <article className="cards">
-      {/* <div>
-        <h2>Heading 2</h2>
-        <ul>
-          <li>Something</li>
-          <li><a href="">Read the full Article here</a></li>
-        </ul>
-        <p>Date</p>
-        
-      </div> */}
-
-      {items.map(({ author, created_at, title, url, objectId }) =>
-      <div key={objectId}>
+      
+      {items.map(({ author, created_at, title, url, objectID, points, num_comments }) =>
+      <div key={objectID}>
         <h2>{title}</h2>
         <ul>
-          <li>posted by {author}</li>
+          <li>posted by <a href={`https://news.ycombinator.com/user?id==${author}`}>{author}</a></li>
           <li><a href={url} target="_blank">go to Article</a></li>
         </ul>
-        <p>{format(new Date(created_at), 'dd MMMM yyyy')}</p>
+        <p>Points: {points} <a href={`https://news.ycombinator.com/item?id=${objectID}`}>Comments: {num_comments}</a></p>
+        
+        <p>added {(moment(created_at).fromNow())}</p>
+        
       </div>      
       )}
     </article>
