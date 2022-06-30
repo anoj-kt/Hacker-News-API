@@ -156,7 +156,13 @@ nav li img {
  }
 
  .section .cards div p {
+  font-size: 0.9rem;
   color: seashell;
+ }
+
+ .section .cards p:last-child {
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
  }
 
 
