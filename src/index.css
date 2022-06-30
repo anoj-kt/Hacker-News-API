@@ -1,13 +1,304 @@
-body {
+ * {   
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box; 
+
+ }
+ 
+ /*NAVBAR */
+ .headernav {  
+  background-color: rgba(105, 90, 205, 0.25);
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  padding-left: 19%;
+  margin-bottom: 0.5rem;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.headernav a {    
+  color: white;   
+  font-size: 1rem;    
+  font-weight: 600;
+
 }
+
+.menu {  
+  width: 100%;  
+  display: flex;
+  align-items: center;
+    
+}
+
+nav li img {
+  height: 48px;
+  width: auto;
+  
+}
+
+.menu li {  
+  display:inline;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.menu li a:hover {
+  color: #ff6600;
+}
+
+/* CONTENT */
+ .content {
+  /* background: linear-gradient(to bottom, #3A2D8F, #483D92, #5C548F, #5C548F, #3A2D8F); */
+  background-color: #3A2D8F;  
+    
+ }
+
+ .section {  
+  height: 100vh; 
+  max-width: 1200px;  
+  overflow: scroll;  
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+
+ }
+
+ .section::-webkit-scrollbar {
+  display: none;
+ }
+
+ form {
+  margin-bottom: 2rem;
+ }
+
+ .section .title h1 {
+  font-weight:bold;
+  font-size: 2rem;
+  color: seashell;
+  text-align: center;
+  margin-bottom: 1rem;
+
+ }
+
+ .section .title a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+
+ }
+
+ .section .title a:hover {
+  color: lightblue;
+  
+  
+ }
+
+ .category {
+  color: seashell;
+  margin-bottom: 1rem;
+
+ }
+
+ .category span {
+  color: #ff6600;
+  font-weight: bold;
+  text-transform: capitalize;
+
+ }
+
+.section .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: seashell;
+
+}
+
+ .section .cards div {  
+  background-color: rgba(105, 90, 205, 0.25); 
+  padding: 1rem;
+  border-radius: 10px;
+ 
+ }
+
+ .section .cards div h2 {
+  color: seashell;
+  margin-bottom: 1rem;
+ }
+
+ .section .cards div ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+ }
+
+ .section .cards div ul li:first-child{
+  font-size: 14px;
+  color: #ff6600;
+  
+ }
+
+ .section .cards div ul li a {
+  font-size: 14px; 
+  color: seashell;
+  text-decoration: underline;
+    
+}
+  
+ .section .cards div ul li a:hover {
+  color: lightblue;
+  cursor: pointer;
+  
+ }
+
+ .section .cards div p {
+  color: seashell;
+ }
+
+
+ ul {
+  list-style-type: none;
+ }
+
+ a {
+  color:seashell;
+  text-decoration: none;
+ }
+
+ input {  
+  margin-right: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1.5rem;  
+  outline: none;
+  padding: 1.25rem 1rem;
+  color: #fff;
+  border: 2px solid slategray;
+  background-color: transparent;  
+
+ }
+
+ input::placeholder {  
+  color: seashell;
+ }
+
+ button {    
+  font-size: 1.5rem;
+  color: rgb(34, 32, 32);
+  outline: none;
+  background-color: transparent;
+  padding: 1.25rem 1rem;
+  border: 2px solid slategray;
+  border-radius: 10px;
+  color: seashell;
+  
+ }
+
+ button:hover {
+  background-color: slateblue;
+  cursor: pointer;
+  transition: all ease-in-out 0.15s;
+  
+ }
+ 
+ .spinner {
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid rgb(137, 128, 199);
+  border-top-color: #ff6600;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+
+
+
+
+/* FOOTER */
+.footer {       
+  width: 100%;
+  height: auto;    
+  font-family: 'Roboto Condensed', sans-serif;
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin: 0 auto;
+  padding-top: 1rem;  
+}
+
+
+.footer-container { 
+  background-color: rgba(105, 90, 205, 0.25);
+  
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;   
+   
+}
+
+.footer-heading h2 {   
+  color: white; 
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-heading a {
+  color: white;    
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+
+/* HOVER LINKS IN FOOTER */
+.footer-heading a:hover {
+  color: #ff6600;
+  transition: 0.3 ease-in-out;
+}
+
+.footer-email-form h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ @media (min-width: 768px) {  
+  .section .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ }
+
+ @media (min-width: 1024px) {
+    
+  form {
+    display: flex;
+    align-items: center;
+  }
+  input {
+    width: 100%;
+  }
+  
+ }
+
+
