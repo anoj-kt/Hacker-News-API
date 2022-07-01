@@ -3,7 +3,6 @@ import moment from 'moment';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-
 function App() {
   const [items, setItems] = useState([])
   const [query, setQuery] = useState('')
@@ -17,11 +16,12 @@ function App() {
       const res = await fetch(`https://hn.algolia.com/api/v1/search?query=${query}`)
       const data = await res.json()
       setItems(data.hits)
-      setLargeTitle(data.hits[0])      
+      setLargeTitle(data.hits[0])
+      setIsLoading(false)     
     }
 
   fetchArticles()
-  setIsLoading(false)
+  
 
   }, [query])
 
@@ -36,7 +36,7 @@ function App() {
       setText('')
     }
   }
-
+  
   return (
     <div className="content">
 
