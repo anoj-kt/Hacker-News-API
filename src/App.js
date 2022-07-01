@@ -16,11 +16,12 @@ function App() {
       const res = await fetch(`https://hn.algolia.com/api/v1/search?query=${query}`)
       const data = await res.json()
       setItems(data.hits)
-      setLargeTitle(data.hits[0])      
+      setLargeTitle(data.hits[0])
+      setIsLoading(false)     
     }
 
   fetchArticles()
-  setIsLoading(false)
+  
 
   }, [query])
 

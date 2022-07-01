@@ -178,7 +178,7 @@ nav li img {
  input {  
   margin-right: 1rem;
   border-radius: 10px;
-  width: 100%;
+  width: 75%;
   font-size: 1.5rem;  
   outline: none;
   padding: 1.25rem 1rem;
@@ -304,7 +304,20 @@ nav li img {
   input {
     width: 100%;
   }
+
   
+ }
+
+ @media (max-width: 1024px) {
+
+  input {
+    width: 70%;
+  }
+
+  .headernav {
+    padding-left: 0%;
+  }
+
  }
 
 
