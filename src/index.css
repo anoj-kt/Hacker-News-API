@@ -87,7 +87,6 @@ nav li img {
   justify-content: center;
   margin-bottom: 2rem;
   text-decoration: underline;
-
  }
 
  .section .title a:hover {
@@ -128,6 +127,12 @@ nav li img {
   color: seashell;
   margin-bottom: 1rem;
  }
+
+ .article-title:hover {
+  color: #ff6600;
+  transition: 0.3s;
+ }
+
 
  .section .cards div ul {
   display: flex;
