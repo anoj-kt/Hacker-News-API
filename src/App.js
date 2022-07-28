@@ -54,7 +54,7 @@ function App() {
         <button>Search</button> 
       </form> 
 
-      {isLoading ? <div className="spinner"></div> :
+      {isLoading ? <div className="spinner-container"><div className="spinner"></div></div> :
       <>
 
       <article className="title">

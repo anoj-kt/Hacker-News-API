@@ -213,9 +213,12 @@ nav li img {
   background-color: slateblue;
   cursor: pointer;
   transition: all ease-in-out 0.15s;
-  
  }
  
+.spinner-container {
+  height: 50vh;
+}
+
  .spinner {
   width: 5rem;
   height: 5rem;
@@ -226,7 +229,6 @@ nav li img {
   position: absolute;
   top: 50%;
   left: 50%;
-  
 }
 
 
