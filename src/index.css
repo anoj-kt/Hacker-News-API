@@ -55,18 +55,18 @@ nav li img {
  }
 
  .section {  
-  height: 100vh; 
+  /* height: 100vh;  */
   max-width: 1200px;  
-  overflow: scroll;  
+  /* overflow: scroll;   */
   margin: auto;
   padding: 2rem 1rem;
   font-family: 'Roboto Condensed', sans-serif;
 
  }
 
- .section::-webkit-scrollbar {
+ /* .section::-webkit-scrollbar {
   display: none;
- }
+ } */
 
  form {
   margin-bottom: 2rem;
@@ -87,7 +87,6 @@ nav li img {
   justify-content: center;
   margin-bottom: 2rem;
   text-decoration: underline;
-
  }
 
  .section .title a:hover {
@@ -128,6 +127,12 @@ nav li img {
   color: seashell;
   margin-bottom: 1rem;
  }
+
+ .article-title:hover {
+  color: #ff6600;
+  transition: 0.3s;
+ }
+
 
  .section .cards div ul {
   display: flex;

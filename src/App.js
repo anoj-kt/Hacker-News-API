@@ -68,7 +68,7 @@ function App() {
       
       {items.map(({ author, created_at, title, url, objectID, points, num_comments }) =>
       <div key={objectID}>
-        <h2><a href={url} target="_blank">{title}</a></h2>
+        <h2><a className="article-title" href={url} target="_blank">{title}</a></h2>
         <ul>
           <li>posted by <a href={`https://news.ycombinator.com/user?id==${author}`}>{author}</a></li>
         </ul>
