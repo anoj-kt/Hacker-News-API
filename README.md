@@ -9,6 +9,9 @@ This was a one week project completed by a team of 4 for the purpose of learning
 - React JS
 - CSS
 
+### Notes
+- Please install all node modules and dependencies to run application successfully.
+
 ### Team members
 Onur Erdogan <br>
 Ali Khaleghzadegan <br>
